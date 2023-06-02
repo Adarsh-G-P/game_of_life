@@ -16,5 +16,5 @@ def test_next_live_or_dead():
     assert gol.next_generation(sample_board) == expected_board
 
 def test_nieghbours_live_dead():
-    board = [[0,1,0],[0,1,0],[0,1,0]]
-    assert gol.count_live_dead_neighbors(board,1,1) == 2
+   board = [[0,1,0],[0,1,0],[0,1,0]]
+   assert gol.count_live_dead_neighbors(board,1,1) == 2
