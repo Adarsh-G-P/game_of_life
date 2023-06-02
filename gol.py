@@ -1,3 +1,5 @@
+import time
+
 def display_board(board):
     grid = []
     for row in board:
@@ -46,28 +48,22 @@ def count_live_dead_neighbors(board, row, col):
 
 
 
-# def main():
-#     # Initialize the starting grid
-#     grid = [
-#         [0, 1, 0],
-#         [0, 0, 1],
-#         [1, 1, 1],
-#     ]
-
-
+def main():
+    # Initialize the starting grid
+    grid = [[0, 1, 0],[0, 0, 1],[1, 1, 1]]
 
     
-#     while True:
+    while True:
         
-#         grid = next_generation(grid)
+        grid = next_generation(grid)
 
         
-#         print(display_grid(grid))
-#         time.sleep(0.8)
+        print(display_board(grid))
+        time.sleep(0.8)
 
-# print("Game Over")
+print("Game Over")
 
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
